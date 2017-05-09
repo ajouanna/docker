@@ -1,0 +1,6 @@
+La commande suivante executee sur Char donne la commande a executer sur le noeud qu'on veut declarer comme "Worker" : docker swarm join-token worker 
+Dans un autre terminal que celui utilisé pour Char, je tape : eval $(docker-machine env Aiur) 
+Puis j'execute la commande precedente, a savoir a cet instant :  
+    docker swarm join \ 
+	--token SWMTKN-1-0a4ge01j37n11shzeicg0oz1he58vyzx469ti4lojkrq2t6qos-78gbfmeuwxkb2uqqacb2gcas2 \ 
+	192.168.99.100:2377 
