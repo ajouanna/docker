@@ -26,5 +26,6 @@ RUN groupadd -g 503 teamspeak &&\
 
 USER teamspeak
 EXPOSE 9987/udp 10011 30033
-WORKDIR "$TS_DIRECTORY"
-ENTRYPOINT ["./ts3server_startscript.sh start"]
+WORKDIR $TS_DIRECTORY
+ENTRYPOINT ["./ts3server_minimal_runscript.sh", "createinifile=1"]
+# ENTRYPOINT ["./ts3server_startscript.sh", "start"]
