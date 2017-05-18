@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.3.4
 
 # rails necessite nodejs
 RUN apt-get update && apt-get install -y nodejs && gem install rails && mkdir -p /opt/app
