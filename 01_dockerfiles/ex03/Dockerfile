@@ -3,7 +3,6 @@ FROM golang
 #
 
 RUN apt-get update && apt-get install -y libpam0g-dev &&\
-	apt-get install -y expect &&\
 	mkdir -p $GOPATH/src/github.com/gogits &&\
 	cd $GOPATH/src/github.com/gogits &&\
 	git clone --depth=1 -b develop https://github.com/gogits/gogs.git &&\
