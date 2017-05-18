@@ -1,9 +1,9 @@
 FROM golang
 # inspiration : https://gogs.io/docs/installation/install_from_source
 #
-# SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && apt-get install -y libpam0g-dev &&\
+	apt-get install -y expect &&\
 	mkdir -p $GOPATH/src/github.com/gogits &&\
 	cd $GOPATH/src/github.com/gogits &&\
 	git clone --depth=1 -b develop https://github.com/gogits/gogs.git &&\
@@ -17,7 +17,6 @@ RUN apt-get update && apt-get install -y libpam0g-dev &&\
 	adduser --disabled-login --gecos 'Gogs' git &&\
 	chmod -R a+rw .	
 
-# USER git
 WORKDIR /go/src/github.com/gogits/gogs
 EXPOSE 3000
-# CMD ["./gogs", "web"] 
+CMD su git -c "./gogs web"
