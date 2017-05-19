@@ -1,1 +1,1 @@
-ocker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'  overlord
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'  overlord
