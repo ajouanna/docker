@@ -1,1 +1,2 @@
-docker run -it alpine /bin/sh
+docker run --rm -it alpine /bin/sh
+echo 'faire docker ps pour verifier la suppression du container'

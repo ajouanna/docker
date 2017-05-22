@@ -1,1 +1,5 @@
-apt-get update && apt-get install -y  gcc git 
+echo 'taper les commandes en commentaire dans ce fichier'
+# docker run --rm -it debian /bin/bash
+# apt-get update && apt-get install -y  gcc git 
+# la ligne suivante est utile pour editer des fichiers...
+# apt-get install -y vim
