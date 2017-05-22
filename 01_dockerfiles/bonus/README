@@ -1,0 +1,3 @@
+Pour contruire mon image : docker build -t aidevig .
+Pour la lancer : docker run -d -p 8000:8000 --name aidevig aidevig
+Puis ouvrir un navigateur a la page IP_DE_Char:8000

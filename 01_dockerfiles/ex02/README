@@ -1,0 +1,7 @@
+Pour creer mon image : docker build -t ex02 .
+Pour la tester :
+cd CheatSheet
+docker build -t cheat .
+docker run -d -p 3000:3000 cheat
+Puis ouvrir une page web sur IP_DE_Char:3000
+=> un site web en ROR s'affiche

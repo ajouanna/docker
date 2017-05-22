@@ -1,0 +1,2 @@
+Je le build ainsi : docker build -t ex00 . 
+Et je l'execute ainsi : docker run -it ex00 

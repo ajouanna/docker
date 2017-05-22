@@ -1,0 +1,8 @@
+Pour builder : docker build -t ex03 . 
+Pour executer : docker run  -d -p 3000:3000   ex03 
+puis ouvrir un navigateur a la page IP_DE_Char:3000
+=> une page d'admin s'affiche. Changer type de bdd a SQLite3 et valider la page.
+=> une page en localhost ne reussit pas a s'afficher : c'est normal car il faut
+l'ouvrir en remplacant localhost par IP_DE_Char
+=> c'est le site GOGS !
+Creer un user, puis interagir avec git depuis une console.
